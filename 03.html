@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <dIv>
+        <button onclick="a()">按钮</button>
+    <button onclick="b()"> 登录</button>
+    </dIv>
+    
+</body>
+</html>
+<script>
+    var a_ = document.getElementsByTagName('button')[0];
+    var b_ = document.getElementsByTagName('button')[1];
+    a_.onclick = function(){
+        a_.style.color = 'red';
+        a_.style.width = '100px';
+        b_.style.width = ''
+
+    }
+    function a(){
+        alert('nihao');
+    }
+    function b(){
+        b_.style.color = 'blue'
+        b_.style.width = '100px'
+        a_.style.width = ''
+    }
+    
+</script>
